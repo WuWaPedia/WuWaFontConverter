@@ -1,0 +1,21 @@
+---
+import Nav from './Nav.astro'
+import AppBody from './AppBody.astro'
+
+interface Props {
+	mode: 'site' | 'wiki'
+}
+const { mode } = Astro.props
+const wiki = mode === 'wiki'
+---
+
+{wiki ? (
+	<div id='wwfc'>
+		<AppBody wiki={true} />
+	</div>
+) : (
+	<>
+		<Nav />
+		<AppBody wiki={false} />
+	</>
+)}

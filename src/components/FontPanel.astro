@@ -1,0 +1,125 @@
+<section class='sec'>
+	<div class='chips' id='wwFontSelect'>
+		<span class='lbl'>字体</span>
+	</div>
+
+	<div class='tape-wrap'>
+		<div class='tape-h'>
+			<span class='lbl'>鸣潮文字</span>
+			<button
+				id='btnApplyAll'
+				class='tg'
+				type='button'
+				aria-pressed='false'
+				title='开启后，切换字体会把已输入的文字一并改为新字体'>
+				<span class='sw'></span>切换已输入文字的字体
+				<span class='st' id='wwApplyState'>
+					关
+				</span>
+			</button>
+			<span class='note'>单击字符定位光标 · 双击删除</span>
+		</div>
+		<div class='tape' id='wwTape'></div>
+		<div class='legend' id='wwTapeLegend'></div>
+		<div class='ctrl'>
+			<div class='slider'>
+				字号
+				<input type='range' id='wwSize' min='20' max='72' step='1' value='44' />
+				<output id='wwSizeOut'>44</output>
+			</div>
+			<div class='slider'>
+				字距
+				<input type='range' id='wwTrack' min='0' max='16' step='1' value='2' />
+				<output id='wwTrackOut'>2</output>
+			</div>
+			<div class='slider'>
+				行距
+				<input type='range' id='wwLead' min='0' max='40' step='1' value='6' />
+				<output id='wwLeadOut'>6</output>
+			</div>
+			<label class='ctl'>
+				字色
+				<select id='wwInk' class='sel' title='默认字色随底色自动反转'>
+					<option value='auto'>默认</option>
+					<option value='custom'>自定义</option>
+				</select>
+			</label>
+			<input type='color' id='wwInkColor' class='swatch' value='#1a1a18' title='自定义字色' aria-label='自定义字色' />
+			<span class='warn' id='wwInkWarn' hidden>
+				字色与底色太接近
+			</span>
+			<label class='ctl'>
+				底色
+				<select id='wwPaper' class='sel'>
+					<option value='white'>白</option>
+					<option value='transparent'>透明</option>
+					<option value='night'>黑</option>
+				</select>
+			</label>
+			<label class='ctl'>
+				对齐
+				<select id='wwAlign' class='sel'>
+					<option value='left'>左</option>
+					<option value='center'>中</option>
+					<option value='right'>右</option>
+				</select>
+			</label>
+			<button id='btnResetType' class='btn sm'>
+				重置排版
+			</button>
+		</div>
+	</div>
+
+	<div class='fld-h'>
+		<span class='lbl'>现实文字</span>
+		<span class='note'>可粘贴</span>
+	</div>
+	<textarea
+		id='wwInput'
+		class='ta'
+		spellcheck='false'
+		autocomplete='off'
+		placeholder='敲键盘，或点下方键位、右侧对照表录入'></textarea>
+	<div class='foot'>
+		<button id='btnCopyInput' class='btn sm'>
+			复制现实文字
+		</button>
+		<button id='btnSample' class='btn sm'>
+			示例
+		</button>
+		<button id='btnClear' class='btn sm danger'>
+			清空
+		</button>
+		<span class='count'>
+			已输入<b id='wwCount'>0</b>字符
+		</span>
+	</div>
+
+	<div class='kb'>
+		<div class='kb-h'>
+			<span class='lbl'>软键盘</span>
+			<span class='badge' id='wwActiveName'>
+				索拉里斯通用体
+			</span>
+		</div>
+		<div class='kb-rows' id='wwKeyboardKeys'></div>
+	</div>
+
+	<div class='bar'>
+		<select id='wwExportScope' class='sel' title='导出范围'>
+			<option value='mixed'>当前排版（混合字体）</option>
+			<option value='active'>仅当前字体</option>
+			<option value='all'>全部文字对照</option>
+		</select>
+		<select id='wwExportFormat' class='sel' title='导出格式'>
+			<option value='png'>PNG位图</option>
+			<option value='svg'>矢量SVG</option>
+		</select>
+		<button id='btnExport' class='btn primary'>
+			导出图片
+		</button>
+		<button id='btnInstallFonts' class='btn btn-install' type='button' title='安装全部鸣潮字体'>
+			安装字体包
+		</button>
+	</div>
+</section>

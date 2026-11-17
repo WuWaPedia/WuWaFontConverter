@@ -1,0 +1,15 @@
+[*]
+indent_size = 4
+indent_style = tab
+insert_final_newline = false
+max_line_length = 127
+quote_type = single
+trim_trailing_whitespace = true
+
+[{*.yml,*.yaml}]
+indent_size = 2
+indent_style = space
+
+[{*.MD,*.md}]
+indent_size = 2
+indent_style = space

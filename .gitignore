@@ -1,0 +1,7 @@
+*-lock.*
+*.lock
+
+node_modules/
+.astro/
+dist/
+dist-wiki/

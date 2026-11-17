@@ -1,0 +1,11 @@
+* text=lf
+
+*.config.js linguist-vendored
+*.config.[cm]js linguist-vendored
+*.config.ts linguist-vendored
+*.config.[cm]ts linguist-vendored
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.vbs text eol=crlf

@@ -1,0 +1,27 @@
+---
+import FontPanel from './FontPanel.astro'
+import PreviewPanel from './PreviewPanel.astro'
+import TablePanel from './TablePanel.astro'
+import Footer from './Footer.astro'
+
+interface Props {
+	wiki?: boolean
+}
+const { wiki = false } = Astro.props
+---
+
+<div class='app'>
+	<div class='layout'>
+		<main>
+			<FontPanel />
+			<PreviewPanel />
+		</main>
+
+		<aside class='side'>
+			<TablePanel />
+		</aside>
+	</div>
+
+	<Footer {wiki} />
+</div>
+<div id='toast' class='toast'></div>

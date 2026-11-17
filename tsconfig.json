@@ -1,0 +1,14 @@
+{
+	"extends": "astro/tsconfigs/strict",
+	"compilerOptions": {
+		"paths": {
+			"@font-provider": ["./src/scripts/fonts/provider.embedded.ts"]
+		}
+	},
+	"contentMappers": [
+		{
+			"package": "@astrojs/ts-content-mapper",
+			"extensions": [".astro"]
+		}
+	]
+}

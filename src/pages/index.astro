@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro'
+import AppShell from '../components/AppShell.astro'
+
+const mode = __BUILD_TARGET__
+---
+
+<Base>
+	<AppShell {mode} />
+	<script>
+		import { boot } from '../scripts/main'
+		boot()
+	</script>
+</Base>

@@ -1,0 +1,23 @@
+---
+interface Props {
+	wiki?: boolean
+}
+const { wiki = false } = Astro.props
+---
+
+<footer class='app-foot'>
+	游戏内各种文字解读请见
+	<a href='https://wuwa.huijiwiki.com/wiki/分类:字体考据' target='_blank' rel='noopener'>
+		<strong>字体考据</strong>
+	</a>
+	。<br />
+	技术支持：{wiki && <i class='fa fa-github'></i>}
+	<a href='https://github.com/WuWaPedia/WuWaFontConverter' target='_blank' rel='noopener'>
+		Fisher4124/WuWaFontConverter
+	</a>
+</footer>
+<div class='site-mark'>
+	<a href='https://wuwa.huijiwiki.com/' target='_blank' rel='noopener'>
+		wuwa.huijiwiki.com
+	</a>
+</div>

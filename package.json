@@ -1,0 +1,24 @@
+{
+	"name": "wuwa-font-converter",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"build:wiki": "bun scripts/build-wiki.mjs",
+		"preview": "astro preview",
+		"prepare": "astro sync",
+		"typecheck": "tsc --noEmit",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@astrojs/ts-content-mapper": "^0.2.0",
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
+		"astro": "^7.4.12",
+		"astro-html-minifier-next": "^5.1.0",
+		"prettier": "^3.10.1",
+		"prettier-plugin-astro": "^1.1.2",
+		"typescript": "^7.0.2",
+		"vite-plugin-singlefile": "^2.3.4"
+	}
+}

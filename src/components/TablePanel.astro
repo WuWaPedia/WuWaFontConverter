@@ -1,0 +1,37 @@
+<section class='sec' id='wwTablePanel'>
+	<div class='sec-h'>
+		<span class='sec-t'>字符对照表</span>
+		<span class='note'>点击字符也可录入</span>
+	</div>
+	<div class='tbl-ctrl'>
+		<select id='wwTableFont' class='sel' title='对照表字体'></select>
+		<select id='wwTableFormat' class='sel' title='保存格式'>
+			<option value='png'>白底PNG</option>
+			<option value='png-transparent'>透明PNG</option>
+			<option value='svg'>矢量SVG</option>
+		</select>
+	</div>
+	<div class='tbl-ctrl'>
+		<button id='btnSaveTable' class='btn sm'>
+			保存本表
+		</button>
+		<button id='btnSaveAllTables' class='btn sm warm'>
+			保存全部对照表
+		</button>
+	</div>
+	<div class='tbl-ctrl'>
+		<input
+			id='wwTableSearch'
+			class='tbl-search'
+			type='search'
+			placeholder='搜索字符，如A或7'
+			autocomplete='off'
+			spellcheck='false'
+		/>
+		<button id='btnSearchClear' class='btn sm'>
+			清除
+		</button>
+	</div>
+	<div class='tbl-count' id='wwTableCount'></div>
+	<div id='wwTableBody' class='tbl-body'></div>
+</section>

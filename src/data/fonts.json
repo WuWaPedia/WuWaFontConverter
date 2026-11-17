@@ -1,0 +1,117 @@
+[
+	{
+		"id": "font-Solaris",
+		"name": "索拉里斯通用体",
+		"file": "SolarisUniversal索拉里斯通用体.ttf",
+		"hue": "#2f4f6b",
+		"charset": "字母、数字、常用符号",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"],
+			[",", ".", ":", ";", "/", "(", ")", "[", "]"]
+		],
+		"extra": "0123456789abcdefghijklmnopqrstuvwxyz",
+		"table": { "noLower": true, "noDigit": true }
+	},
+	{
+		"id": "font-Ragunna",
+		"name": "拉古那花体",
+		"file": "Ragunna拉古那花体.ttf",
+		"hue": "#8c2f4f",
+		"charset": "仅大小写字母",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "h", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"]
+		],
+		"extra": "abcdefghijklmnopqrstuvwxyz",
+		"table": { "lowerOnly": "h" }
+	},
+	{
+		"id": "font-Septimont",
+		"name": "七丘文字",
+		"file": "Septimont七丘文字.ttf",
+		"hue": "#8a5a12",
+		"charset": "字母，无J、Z",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"]
+		],
+		"extra": "abcdefghijklmnopqrstuvwxyz",
+		"filterJz": true,
+		"disabled": ["J", "Z"],
+		"table": { "noLower": true }
+	},
+	{
+		"id": "font-LahaiRoi",
+		"name": "拉海洛文字",
+		"file": "Lahai-Roi拉海洛文字.ttf",
+		"hue": "#4a4a8a",
+		"charset": "字母、数字、希腊符号",
+		"rows": [
+			["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"],
+			["δ", "θ", "μ", "π", "σ", "φ", "ψ", "∂", "𝑥"]
+		],
+		"extra": "abcdefghijklmnopqrstuvwxyzΔΘΜΠΣΦΨ𝑋%.",
+		"table": { "noLower": true, "hideChars": "ΔΘΜΠΣΦΨ𝑋" }
+	},
+	{
+		"id": "font-Federation",
+		"name": "联邦文字",
+		"file": "Federation联邦文字.ttf",
+		"hue": "#5a3f7a",
+		"charset": "仅字母与句点",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"]
+		],
+		"extra": "abcdefghijklmnopqrstuvwxyz.",
+		"table": { "noLower": true }
+	},
+	{
+		"id": "font-DigitalTube",
+		"name": "鸣潮数码管",
+		"file": "DigitalTube鸣潮数码管.ttf",
+		"hue": "#3f6b3a",
+		"charset": "仅数字0-9",
+		"rows": [["1", "2", "3"], ["4", "5", "6"], ["7", "8", "9"], ["0"]],
+		"extra": ""
+	},
+	{
+		"id": "font-OldFont",
+		"name": "鸣潮旧体",
+		"file": "OldFont鸣潮旧体.ttf",
+		"hue": "#7a4a2f",
+		"charset": "字母与少量标点",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"]
+		],
+		"extra": "abcdefghijklmnopqrstuvwxyz\"\\,-.:",
+		"table": { "noLower": true }
+	},
+	{
+		"id": "font-RRibbon",
+		"name": "黎那汐塔丝带体",
+		"file": "RinascitaRibbon黎那汐塔丝带体.ttf",
+		"hue": "#2f6b66",
+		"charset": "大小写字母、数字",
+		"rows": [
+			["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
+			["A", "S", "D", "F", "G", "H", "J", "K", "L"],
+			["Z", "X", "C", "V", "B", "N", "M"],
+			["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+			["a", "s", "d", "f", "g", "h", "j", "k", "l"],
+			["z", "x", "c", "v", "b", "n", "m"]
+		],
+		"extra": "0123456789",
+		"table": { "noDigit": true }
+	}
+]
